@@ -12,11 +12,12 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <!-- container нужен чтобы регулировать ширину контента -->
+        <div class="container header-container">
             <a class="logo">
-                <img src="#" alt="Webovio Logo">
+                <img src="img/logo.svg" alt="Webovio Logo">
             </a>
-            <button class="burger" aria-label="open menu">
+            <button class="burger btn-reset" aria-label="open menu">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
@@ -25,15 +26,19 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <span class="hero-subtitle">A place where</span>
-                <h1 class="heri-title">
-                    A&nbsp;creative agency for redemptive brands
-                </h1>
-                <p class="hero-descr">Anteelo is&nbsp;a&nbsp;leading strategic design firm that builds powerful digital
-                    solutions for startups and enterprises.</p>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">A place where</span>
+                    <h1 class="heri-title">
+                        A&nbsp;creative agency for redemptive brands
+                    </h1>
+                    <p class="hero-descr">Anteelo is&nbsp;a&nbsp;leading strategic design firm that builds powerful
+                        digital
+                        solutions for startups and enterprises.</p>
+                </div>
+                <a href="#" class="hero-link link">Get in touch</a>
             </div>
-            <a href="#" class="hero-link link">Get in touch</a>
+
         </section>
         <section class="services">
             <div class="container">
@@ -123,10 +128,14 @@
                     <p class="footer-text">Feel free to&nbsp;get in&nbsp;touch with&nbsp;us vai email</p>
                     <a href="mailto:info.webovio@gmail.com" class="footer-mail">info.webovio@gmail.com</a>
                     <ul class="social">
-                        <li class="social-item"><a href="#" class="social-link social-link-fb" target="_blank" aria-label="Link to Facebook"></a></li>
-                        <li class="social-item"><a href="#" class="social-link social-link-tw" target="_blank" aria-label="Link to Twitter"></a></li>
-                        <li class="social-item"><a href="#" class="social-link social-link-g" target="_blank" aria-label="Link to Google+"></a></li>
-                        <li class="social-item"><a href="#" class="social-link social-link-in" target="_blank" aria-label="Link to LinkedIn"></a></li>
+                        <li class="social-item"><a href="#" class="social-link social-link-fb" target="_blank"
+                                aria-label="Link to Facebook"></a></li>
+                        <li class="social-item"><a href="#" class="social-link social-link-tw" target="_blank"
+                                aria-label="Link to Twitter"></a></li>
+                        <li class="social-item"><a href="#" class="social-link social-link-g" target="_blank"
+                                aria-label="Link to Google+"></a></li>
+                        <li class="social-item"><a href="#" class="social-link social-link-in" target="_blank"
+                                aria-label="Link to LinkedIn"></a></li>
                     </ul>
                 </div>
             </div>
@@ -134,7 +143,7 @@
                 <a class="logo">
                     <img src="#" alt="Webovio Logo">
                 </a>
-                <small class="copyright">&copy;&nbsp;2020@webovio. All Rights Reserved.</small>         
+                <small class="copyright">&copy;&nbsp;2020@webovio. All Rights Reserved.</small>
             </div>
         </div>
     </footer>
