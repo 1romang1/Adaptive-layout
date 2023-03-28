@@ -8,35 +8,35 @@
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../fonts/Poppins-Regular.woff') format('woff');
-	font-display: swap;
-	font-weight: 400;
-	font-style: normal;
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../fonts/Poppins-Medium.woff') format('woff');
-	font-display: swap;
-	font-weight: 500;
-	font-style: normal;
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../fonts/Poppins-SemiBold.woff') format('woff');
-	font-display: swap;
-	font-weight: 600;
-	font-style: normal;
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../fonts/Poppins-Bold.woff') format('woff');
-	font-display: swap;
-	font-weight: 700;
-	font-style: normal;
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
 }
 
 :root {
@@ -76,6 +76,18 @@ img {
     padding: 0 15px;
 }
 
+.link {
+    display: inline-block;
+    border-bottom: 1px solid currentColor;
+    /*currentColor чтобы граница была цвета текста*/
+    text-indent: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    color: #D4D6D4;
+}
+
 .header {
     /* чтобы хедэр был на картинке, а не над ней*/
     position: absolute;
@@ -99,7 +111,7 @@ img {
     /* относительно этой кнопки будем располагать линии бургера */
     position: relative;
     border-radius: 100%;
-    padding:  var(--offset-vertical) var(--offset);
+    padding: var(--offset-vertical) var(--offset);
     width: 40px;
     height: 40px;
     background-color: #F5F6F7;
@@ -131,9 +143,31 @@ img {
 }
 
 .hero {
-    padding: 100px;
+    padding-top: 189px;
+    padding-bottom: 30px;
     background-image: url(../img/hero-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+}
+
+.hero-content {
+    max-width: 616px;
+    color: #fff;
+}
+
+.hero-descr {
+    font-weight: 400;
+    font-size: 16px;
 }
