@@ -77,15 +77,33 @@ img {
 }
 
 .link {
-    display: inline-block;
-    border-bottom: 1px solid currentColor;
-    /*currentColor чтобы граница была цвета текста*/
-    text-indent: 10px;
+    /* svg и текст на одной линии */
+    display: inline-flex;
     font-weight: 700;
     font-size: 16px;
+        /*расстояние от текста до линии */
     line-height: 1;
     text-decoration: none;
     color: #D4D6D4;
+}
+
+.link svg {
+    width: 10px;
+    height: 12px;
+    fill: currentColor;
+    /* немного опустить svg */
+    transform: translateY(1px);
+    transition: color 0.3s ease-in-out;
+}
+
+.link span {
+        /*currentColor чтобы граница была цвета текста*/
+        border-bottom: 1px solid currentColor;
+        text-indent: 10px;
+}
+
+.link:hover {
+    color: #FFD723;
 }
 
 .header {
@@ -170,4 +188,8 @@ img {
 .hero-descr {
     font-weight: 400;
     font-size: 16px;
+}
+
+.hero-link {
+    color: #FFD723;
 }
