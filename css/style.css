@@ -81,7 +81,7 @@ img {
     display: inline-flex;
     font-weight: 700;
     font-size: 16px;
-        /*расстояние от текста до линии */
+    /*расстояние от текста до линии */
     line-height: 1;
     text-decoration: none;
     color: #D4D6D4;
@@ -97,9 +97,9 @@ img {
 }
 
 .link span {
-        /*currentColor чтобы граница была цвета текста*/
-        border-bottom: 1px solid currentColor;
-        text-indent: 10px;
+    /*currentColor чтобы граница была цвета текста*/
+    border-bottom: 1px solid currentColor;
+    text-indent: 10px;
 }
 
 .link:hover {
@@ -162,7 +162,8 @@ img {
 
 .hero {
     padding-top: 189px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
+    min-height: 811px;
     background-image: url(../img/hero-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -170,11 +171,16 @@ img {
 }
 
 .hero-subtitle {
+    display: inline-block;
+    margin-bottom: 22px;
     font-size: 14px;
     line-height: 21px;
 }
 
 .hero-title {
+    /* обнуляем отступы */
+    margin: 0;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 60px;
     line-height: 74px;
@@ -186,6 +192,9 @@ img {
 }
 
 .hero-descr {
+    /* обнуляем отступы */
+    margin: 0;
+    margin-bottom: 45px;
     font-weight: 400;
     font-size: 16px;
 }
