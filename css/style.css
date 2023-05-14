@@ -323,6 +323,28 @@ img {
     text-decoration: none;
 }
 
+.footer-middle {
+    --grid-gap: 70px;
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 60px;
+}
+
+.footer-column:last-child {
+    position: relative;
+}
+
+.footer-column:last-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-1 * (var(--grid-gap)));
+    width: 1px;
+    height: 100%;
+   background-color: #5D6544;
+}
+
 .footer-title {
     margin: 0;
     margin-bottom: 21px;
@@ -339,4 +361,22 @@ img {
     line-height: 40px;
     color: #B6C197;
     text-decoration: none;
+}
+
+.footer-text {
+    margin: 0;
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #B6C197;
+}
+
+.footer-mail {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
